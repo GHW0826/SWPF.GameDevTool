@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 
-1-255015040
+2-387816702
 
-3-1944266538
-197-804104651
-Views\ViewA.xaml;
+4246898677
+198772963553
+Views\MainView.xaml;Views\MainWindow.xaml;
 
 False
 

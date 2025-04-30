@@ -9,7 +9,8 @@
       "SWPF.GameDevTool.MAIN/1.0.0": {
         "dependencies": {
           "CommunityToolkit.Mvvm": "8.4.0",
-          "Prism.Wpf": "8.1.97"
+          "Prism.Wpf": "8.1.97",
+          "SWPF.Common": "1.0.0"
         },
         "runtime": {
           "SWPF.GameDevTool.MAIN.dll": {}
@@ -63,6 +64,14 @@
             "fileVersion": "6.100.24.56208"
           }
         }
+      },
+      "SWPF.Common/1.0.0": {
+        "runtime": {
+          "SWPF.Common.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -113,6 +122,11 @@
       "sha512": "sha512-5o/HZxx6RVqYlhKSq8/zronDkALJZUT2Vz0hx43f0gwe8mwlM0y2nYlqdBwLMzr262Bwvpikeb/yEwkAa5PADg==",
       "path": "system.runtime.compilerservices.unsafe/6.1.0",
       "hashPath": "system.runtime.compilerservices.unsafe.6.1.0.nupkg.sha512"
+    },
+    "SWPF.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

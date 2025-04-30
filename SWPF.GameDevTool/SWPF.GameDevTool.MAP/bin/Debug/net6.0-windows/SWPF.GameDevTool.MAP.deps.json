@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v6.0": {
       "SWPF.GameDevTool.MAP/1.0.0": {
         "dependencies": {
-          "Prism.Wpf": "8.1.97"
+          "Prism.Wpf": "8.1.97",
+          "SWPF.Common": "1.0.0"
         },
         "runtime": {
           "SWPF.GameDevTool.MAP.dll": {}
@@ -41,6 +42,14 @@
             "fileVersion": "8.1.97.5141"
           }
         }
+      },
+      "SWPF.Common/1.0.0": {
+        "runtime": {
+          "SWPF.Common.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -70,6 +79,11 @@
       "sha512": "sha512-ZEa6S1mK35h8/blyb0uR0ed3wkpHtPdhB4eniXINJnTiJMWlGl/As6SVlFFdOPD+qsEdWNYV3xgyQD/ue5cvBA==",
       "path": "prism.wpf/8.1.97",
       "hashPath": "prism.wpf.8.1.97.nupkg.sha512"
+    },
+    "SWPF.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

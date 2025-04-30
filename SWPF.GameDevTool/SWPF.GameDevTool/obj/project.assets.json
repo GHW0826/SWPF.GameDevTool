@@ -268,12 +268,22 @@
           }
         }
       },
+      "SWPF.Common/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/SWPF.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SWPF.Common.dll": {}
+        }
+      },
       "SWPF.GameDevTool.MAIN/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "CommunityToolkit.Mvvm": "8.4.0",
-          "Prism.Wpf": "8.1.97"
+          "Prism.Wpf": "8.1.97",
+          "SWPF.Common": "1.0.0"
         },
         "compile": {
           "bin/placeholder/SWPF.GameDevTool.MAIN.dll": {}
@@ -1142,6 +1152,11 @@
         "system.threading.tasks.4.3.0.nupkg.sha512",
         "system.threading.tasks.nuspec"
       ]
+    },
+    "SWPF.Common/1.0.0": {
+      "type": "project",
+      "path": "../../SWPF.Common/SWPF.Common/SWPF.Common.csproj",
+      "msbuildProject": "../../SWPF.Common/SWPF.Common/SWPF.Common.csproj"
     },
     "SWPF.GameDevTool.MAIN/1.0.0": {
       "type": "project",

@@ -5,5 +5,10 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Prism.Wpf" Version="8.1.97" />
+
+	<ProjectReference Include="..\..\SWPF.Common\SWPF.Common\SWPF.Common.csproj">
+		<Name>SWPF.GameDevTool.MAP</Name>
+	</ProjectReference>
+	  
   </ItemGroup>
 </Project>

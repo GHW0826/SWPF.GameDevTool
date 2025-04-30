@@ -1,7 +1,10 @@
-﻿using System;
+﻿using SWPF.Common.Base;
+using SWPF.Common.Converters;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -16,8 +19,11 @@ using System.Windows.Shapes;
 
 namespace SWPF.GameDevTool.MAIN.Views
 {
-    public partial class MainWindow : Window
+    public partial class MainWindow : WindowBase
     {
+        public bool _isTextVisible;
+        public bool IsTextVisible {get; set;}
+
         public MainWindow()
         {
             InitializeComponent();
