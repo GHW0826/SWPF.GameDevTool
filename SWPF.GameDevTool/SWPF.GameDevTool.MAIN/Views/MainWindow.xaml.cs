@@ -51,8 +51,11 @@ namespace SWPF.GameDevTool.MAIN.Views
                 //{
                 //    return null;
                 //}
+                string toolType = sysMenuMsg as string;
 
-                Window childWindow = DynamicLoader.CreateInstance<Window>("MAP" /* sysMenuMsg.MenuExecCd */, "MainWindow");
+                Window childWindow = DynamicLoader.CreateInstance<Window>(toolType /* sysMenuMsg.MenuExecCd */, "MainWindow");
+                childWindow.Width = 400;
+                childWindow.Height = 400;
                 if (childWindow == null)
                     return null;
 

@@ -16,7 +16,7 @@
   </ItemGroup>
   <ItemGroup>
 	<ProjectReference Include="..\..\SWPF.Common\SWPF.Common\SWPF.Common.csproj">
-	  <Name>SWPF.GameDevTool.MAP</Name>
+	  <Name>SWPF.GameDevTool.Common</Name>
 	</ProjectReference>
     <ProjectReference Include="..\SWPF.GameDevTool.MAIN\SWPF.GameDevTool.MAIN.csproj">
       <Name>SWPF.GameDevTool.MAIN</Name>
@@ -24,6 +24,9 @@
     <ProjectReference Include="..\SWPF.GameDevTool.MAP\SWPF.GameDevTool.MAP.csproj">
       <Name>SWPF.GameDevTool.MAP</Name>
     </ProjectReference>
+	<ProjectReference Include="..\SWPF.GameDevTool.TEST\SWPF.GameDevTool.TEST.csproj">
+       <Name>SWPF.GameDevTool.TEST</Name>
+	</ProjectReference>
 
     <None Update="App.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

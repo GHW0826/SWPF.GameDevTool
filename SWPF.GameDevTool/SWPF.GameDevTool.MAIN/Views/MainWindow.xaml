@@ -7,23 +7,12 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300"
+             Title="툴 선택" Width="600" Height="400"
+             WindowStartupLocation="CenterScreen"
              xmlns:prism="http://prismlibrary.com/"
              prism:ViewModelLocator.AutoWireViewModel="True">
-    <base:WindowBase.Resources>
-        <cm:BoolToVisibilityConverter x:Key="BoolToVisConverter" CollapseWhenFalse="True" />
-    </base:WindowBase.Resources>
-    <Grid x:Name="gdMain">
-
-
-        <StackPanel Margin="20">
-            <CheckBox Content="Show Text" />
-            <TextBlock Text="Hello World!"
-                   Visibility="{Binding IsTextVisible, Converter={StaticResource BoolToVisConverter}}"
-                   FontSize="24" />
-        </StackPanel>
-        
-        <Grid x:Name="gdLoginPane" Visibility="Collapsed" >
+    <Grid x:Name="gdMain" Width="400" Height="320">
+        <Grid x:Name="gdLoginPane" Visibility="Hidden" >
             <local:LoginPanel x:Name="ucLogin" />
         </Grid>
         <Grid x:Name="gdTaskPane" Visibility="Visible">

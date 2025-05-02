@@ -11,7 +11,8 @@
           "Prism.Wpf": "8.1.97",
           "SWPF.Common": "1.0.0",
           "SWPF.GameDevTool.MAIN": "1.0.0",
-          "SWPF.GameDevTool.MAP": "1.0.0"
+          "SWPF.GameDevTool.MAP": "1.0.0",
+          "SWPF.GameDevTool.TEST": "1.0.0"
         },
         "runtime": {
           "ALL.dll": {}
@@ -98,6 +99,18 @@
             "fileVersion": "1.0.0.0"
           }
         }
+      },
+      "SWPF.GameDevTool.TEST/1.0.0": {
+        "dependencies": {
+          "Prism.Wpf": "8.1.97",
+          "SWPF.Common": "1.0.0"
+        },
+        "runtime": {
+          "SWPF.GameDevTool.TEST.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -160,6 +173,11 @@
       "sha512": ""
     },
     "SWPF.GameDevTool.MAP/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SWPF.GameDevTool.TEST/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

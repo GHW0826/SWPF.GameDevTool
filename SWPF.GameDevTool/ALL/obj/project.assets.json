@@ -143,6 +143,23 @@
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App.WPF"
         ]
+      },
+      "SWPF.GameDevTool.TEST/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Prism.Wpf": "8.1.97",
+          "SWPF.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SWPF.GameDevTool.TEST.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SWPF.GameDevTool.TEST.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
       }
     }
   },
@@ -392,6 +409,11 @@
       "type": "project",
       "path": "../SWPF.GameDevTool.MAP/SWPF.GameDevTool.MAP.csproj",
       "msbuildProject": "../SWPF.GameDevTool.MAP/SWPF.GameDevTool.MAP.csproj"
+    },
+    "SWPF.GameDevTool.TEST/1.0.0": {
+      "type": "project",
+      "path": "../SWPF.GameDevTool.TEST/SWPF.GameDevTool.TEST.csproj",
+      "msbuildProject": "../SWPF.GameDevTool.TEST/SWPF.GameDevTool.TEST.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -399,7 +421,8 @@
       "Prism.Wpf >= 8.1.97",
       "SWPF.Common >= 1.0.0",
       "SWPF.GameDevTool.MAIN >= 1.0.0",
-      "SWPF.GameDevTool.MAP >= 1.0.0"
+      "SWPF.GameDevTool.MAP >= 1.0.0",
+      "SWPF.GameDevTool.TEST >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -442,6 +465,9 @@
             },
             "D:\\git\\SWPF.GameDevTool\\SWPF.GameDevTool\\SWPF.GameDevTool.MAP\\SWPF.GameDevTool.MAP.csproj": {
               "projectPath": "D:\\git\\SWPF.GameDevTool\\SWPF.GameDevTool\\SWPF.GameDevTool.MAP\\SWPF.GameDevTool.MAP.csproj"
+            },
+            "D:\\git\\SWPF.GameDevTool\\SWPF.GameDevTool\\SWPF.GameDevTool.TEST\\SWPF.GameDevTool.TEST.csproj": {
+              "projectPath": "D:\\git\\SWPF.GameDevTool\\SWPF.GameDevTool\\SWPF.GameDevTool.TEST\\SWPF.GameDevTool.TEST.csproj"
             }
           }
         }

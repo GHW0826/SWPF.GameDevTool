@@ -24,7 +24,7 @@ namespace SWPF.GameDevTool.MAIN
         public AppMain()
         {
             var window = new MainWindow();
-            window.Width = 300;
+            window.Width = 400;
             window.Height = 300;
             window.Show();
         }
