@@ -1,0 +1,6 @@
+D:\git\SWPF.GameDevTool\SWPF.GameDevTool\SWPF.GameDevTool.Common\obj\Debug\net6.0-windows\SWPF.GameDevTool.Common.csproj.AssemblyReference.cache
+D:\git\SWPF.GameDevTool\SWPF.GameDevTool\SWPF.GameDevTool.Common\obj\Debug\net6.0-windows\SWPF.GameDevTool.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\git\SWPF.GameDevTool\SWPF.GameDevTool\SWPF.GameDevTool.Common\obj\Debug\net6.0-windows\SWPF.GameDevTool.Common.AssemblyInfoInputs.cache
+D:\git\SWPF.GameDevTool\SWPF.GameDevTool\SWPF.GameDevTool.Common\obj\Debug\net6.0-windows\SWPF.GameDevTool.Common.AssemblyInfo.cs
+D:\git\SWPF.GameDevTool\SWPF.GameDevTool\SWPF.GameDevTool.Common\obj\Debug\net6.0-windows\SWPF.GameDevTool.Common.csproj.CoreCompileInputs.cache
+D:\git\SWPF.GameDevTool\SWPF.GameDevTool\SWPF.GameDevTool.Common\obj\Debug\net6.0-windows\SWPF.GameDevTool.Common.sourcelink.json

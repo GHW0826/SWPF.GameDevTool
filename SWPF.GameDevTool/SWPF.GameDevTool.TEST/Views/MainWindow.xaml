@@ -11,4 +11,10 @@
              xmlns:prism="http://prismlibrary.com/"
              prism:ViewModelLocator.AutoWireViewModel="True" 
              >
+    <StackPanel Margin="20">
+        <Button Content="Connect via gRPC" Click="ConnectGrpc_Click"/>
+        <Button Content="Connect via TCP" Click="ConnectTcp_Click"/>
+        <Button Content="Connect via HTTP" Click="ConnectHttp_Click"/>
+        <Button Content="Send Message" Click="SendMessage_Click"/>
+    </StackPanel>
 </Window>

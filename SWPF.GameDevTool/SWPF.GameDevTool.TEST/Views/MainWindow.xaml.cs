@@ -1,4 +1,5 @@
 ﻿using Prism.Regions;
+using SWPF.GameDevTool.TEST.ViewModels;
 using SWPF.GameDevTool.TEST.Views;
 using System;
 using System.Collections.Generic;
@@ -22,22 +23,17 @@ namespace SWPF.GameDevTool.TEST
     /// </summary>
     public partial class MainWindow : Window
     {
-        private readonly IRegionManager _regionManager;
+        private MainViewModel _viewModel = new MainViewModel();
 
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = _viewModel;
         }
 
-        public MainWindow(IRegionManager regionManager)
-        {
-            InitializeComponent();
-            _regionManager = regionManager;
-        }
-
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-     
-        }
+        private async void ConnectGrpc_Click(object sender, RoutedEventArgs e) => await _viewModel.InitializeGrpc();
+        private async void ConnectTcp_Click(object sender, RoutedEventArgs e) => await _viewModel.InitializeTcp();
+        private async void ConnectHttp_Click(object sender, RoutedEventArgs e) => await _viewModel.InitializeHttp();
+        private async void SendMessage_Click(object sender, RoutedEventArgs e) => await _viewModel.SendMessage();
     }
 }

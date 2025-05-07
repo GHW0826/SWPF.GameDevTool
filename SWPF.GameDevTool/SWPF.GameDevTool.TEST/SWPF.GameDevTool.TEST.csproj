@@ -9,6 +9,8 @@
 	<ProjectReference Include="..\..\SWPF.Common\SWPF.Common\SWPF.Common.csproj">
 		<Name>SWPF.GameDevTool.Common</Name>
 	</ProjectReference>
+
+	<ProjectReference Include="..\SWPF.GameDevTool.Common\SWPF.GameDevTool.Common.csproj" />
 	  
   </ItemGroup>
 </Project>

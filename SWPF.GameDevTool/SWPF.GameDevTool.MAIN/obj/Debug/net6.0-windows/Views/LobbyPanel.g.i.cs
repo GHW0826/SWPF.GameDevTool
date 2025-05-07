@@ -69,7 +69,7 @@ namespace SWPF.GameDevTool.MAIN.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/SWPF.GameDevTool.MAIN;component/views/lobbypanel.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SWPF.GameDevTool.MAIN;V1.0.0.0;component/views/lobbypanel.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\LobbyPanel.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

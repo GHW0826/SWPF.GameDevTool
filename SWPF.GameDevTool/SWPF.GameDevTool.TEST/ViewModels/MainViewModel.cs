@@ -1,25 +1,46 @@
 ﻿using Prism.Commands;
 using Prism.Mvvm;
+using SWPF.GameDevTool.Common.Network;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace SWPF.GameDevTool.TEST.ViewModels
 {
     public class MainViewModel : BindableBase
     {
-        private string _message;
-        public string Message
+        private INetworkClient _client;
+
+        public async Task InitializeGrpc()
         {
-            get { return _message; }
-            set { SetProperty(ref _message, value); }
+            _client = new GrpcClient();
+            await _client.ConnectAsync("localhost", 5000);
         }
 
-        public MainViewModel()
+        public async Task InitializeTcp()
         {
-            Message = "View A from your Prism Module";
+            _client = new TcpClientWrapper();
+            await _client.ConnectAsync("localhost", 5001);
+        }
+
+        public async Task InitializeHttp()
+        {
+            _client = new HttpClientWrapper();
+            await _client.ConnectAsync("localhost", 5002);
+        }
+
+        public async Task SendMessage()
+        {
+            if (_client == null)
+            {
+                MessageBox.Show("Client not initialized");
+                return;
+            }
+
+            await _client.SendAsync("Hello from WPF");
         }
     }
 }
