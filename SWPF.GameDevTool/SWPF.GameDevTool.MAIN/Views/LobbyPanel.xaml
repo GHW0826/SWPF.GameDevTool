@@ -5,9 +5,18 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:SWPF.GameDevTool.MAIN.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid x:Name="gdMain">
-        <TextBlock Text="로비 영역" />
-        <Grid x:Name="gdMainMenu" Margin="10,2,10,4"/>
+             Width="400" Height="400">
+    <Grid x:Name="gdMain" HorizontalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="로비 영역" HorizontalAlignment="Center" Margin="0,10" />
+        <Grid x:Name="gdMainMenu"
+              HorizontalAlignment="Center"
+              VerticalAlignment="Center"
+              Margin="10"
+              Width="Auto" />
     </Grid>
 </UserControl>

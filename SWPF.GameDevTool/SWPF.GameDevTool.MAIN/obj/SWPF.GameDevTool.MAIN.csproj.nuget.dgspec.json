@@ -4,6 +4,22 @@
     "D:\\git\\SWPF.GameDevTool\\SWPF.GameDevTool\\SWPF.GameDevTool.MAIN\\SWPF.GameDevTool.MAIN.csproj": {}
   },
   "projects": {
+    "D:\\git\\SWPF.GameDevTool\\SWPF.Common\\SWPF.Common\\SWPF.Common.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\git\\SWPF.GameDevTool\\SWPF.Common\\SWPF.Common\\SWPF.Common.csproj",
+        "projectName": "SWPF.Common",
+        "projectPath": "D:\\git\\SWPF.GameDevTool\\SWPF.Common\\SWPF.Common\\SWPF.Common.csproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
     "D:\\git\\SWPF.GameDevTool\\SWPF.GameDevTool\\SWPF.GameDevTool.MAIN\\SWPF.GameDevTool.MAIN.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -31,7 +47,11 @@
         "frameworks": {
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\git\\SWPF.GameDevTool\\SWPF.Common\\SWPF.Common\\SWPF.Common.csproj": {
+                "projectPath": "D:\\git\\SWPF.GameDevTool\\SWPF.Common\\SWPF.Common\\SWPF.Common.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

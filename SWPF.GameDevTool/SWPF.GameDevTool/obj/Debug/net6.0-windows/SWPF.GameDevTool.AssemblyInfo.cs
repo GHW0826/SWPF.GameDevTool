@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SWPF.GameDevTool")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+338c4ffeb2595dc7dba877661170f11b3e1360f7")]
 [assembly: System.Reflection.AssemblyProductAttribute("SWPF.GameDevTool")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SWPF.GameDevTool")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
