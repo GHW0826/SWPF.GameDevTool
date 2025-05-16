@@ -1,7 +1,10 @@
-﻿using System;
+﻿using SWPF.Common.Base;
+using SWPF.Common.Converters;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -16,8 +19,11 @@ using System.Windows.Shapes;
 
 namespace SWPF.GameDevTool.MAIN.Views
 {
-    public partial class MainWindow : Window
+    public partial class MainWindow : WindowBase
     {
+        public bool _isTextVisible;
+        public bool IsTextVisible {get; set;}
+
         public MainWindow()
         {
             InitializeComponent();
@@ -45,8 +51,11 @@ namespace SWPF.GameDevTool.MAIN.Views
                 //{
                 //    return null;
                 //}
+                string toolType = sysMenuMsg as string;
 
-                Window childWindow = DynamicLoader.CreateInstance<Window>("MAP" /* sysMenuMsg.MenuExecCd */, "MainWindow");
+                Window childWindow = DynamicLoader.CreateInstance<Window>(toolType /* sysMenuMsg.MenuExecCd */, "MainWindow");
+                childWindow.Width = 400;
+                childWindow.Height = 400;
                 if (childWindow == null)
                     return null;
 

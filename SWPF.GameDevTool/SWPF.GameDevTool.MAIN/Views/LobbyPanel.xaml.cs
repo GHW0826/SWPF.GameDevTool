@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -25,38 +26,68 @@ namespace SWPF.GameDevTool.MAIN.Views
         public LobbyPanel()
         {
             InitializeComponent();
-
             InitMenuControl();
         }
         private void InitMenuControl()
         {
 
-            for (int i = 0; i < 2; i++)
+            var launcherGrid = new UniformGrid
             {
-                gdMainMenu.RowDefinitions.Add(new RowDefinition());
-            }
-            for (int i = 0; i < 2; i++)
-            {
-                gdMainMenu.ColumnDefinitions.Add(new ColumnDefinition());
-            }
-
-            var panel = NewIconPanel();
-            var appBtn = new Button()
-            {
-                Content = "앱 실행",
-                Margin = new Thickness(4),
-                Tag = "MAP"
-            };
-            appBtn.Click += (s, e) =>
-            {
-                AppBtnClick?.Invoke(s, e);
+                Rows = 2,
+                Columns = 2,
+                Margin = new Thickness(10),
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center
             };
 
-            // 버튼을 gdMainMenu의 (0, 0) 위치에 배치
-            Grid.SetRow(appBtn, 0);
-            Grid.SetColumn(appBtn, 0);
-            // 실제로 Grid에 추가
-            gdMainMenu.Children.Add(appBtn);
+            // 앱 정보 리스트
+            var apps = new[]
+            {
+                new { Title = "Map", Tag = "MAP" },
+                new { Title = "Skill", Tag = "SKILL" },
+                new { Title = "Editor", Tag = "EDITOR" },
+                new { Title = "TEST", Tag = "TEST" },
+            };
+
+            foreach (var app in apps)
+            {
+                var btn = new Button
+                {
+                    Margin = new Thickness(12),
+                    Tag = app.Tag,
+                    Padding = new Thickness(4),
+                    Width = 96,
+                    Height = 96,
+                    Content = new StackPanel
+                    {
+                        Orientation = Orientation.Vertical,
+                        HorizontalAlignment = HorizontalAlignment.Center,
+                        VerticalAlignment = VerticalAlignment.Center,
+                        Children =
+                        {
+                            // TODO Image
+                            new Rectangle
+                            {
+                                Width = 36,
+                                Height = 36,
+                                Fill = Brushes.LightGray,
+                                Margin = new Thickness(0, 0, 0, 6)
+                            },
+                            new TextBlock
+                            {
+                                Text = app.Title,
+                                FontWeight = FontWeights.SemiBold,
+                                FontSize = 12,
+                                HorizontalAlignment = HorizontalAlignment.Center
+                            }
+                        }
+                    }
+                };
+                btn.Click += (s, e) => AppBtnClick?.Invoke(s, e);
+                launcherGrid.Children.Add(btn);
+            }
+
+            gdMainMenu.Children.Add(launcherGrid);
         }
 
         private StackPanel NewIconPanel()

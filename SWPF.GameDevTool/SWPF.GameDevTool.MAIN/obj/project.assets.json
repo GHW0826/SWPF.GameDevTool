@@ -99,6 +99,15 @@
         "build": {
           "buildTransitive/net6.0/_._": {}
         }
+      },
+      "SWPF.Common/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/SWPF.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SWPF.Common.dll": {}
+        }
       }
     }
   },
@@ -333,12 +342,18 @@
         "system.runtime.compilerservices.unsafe.6.1.0.nupkg.sha512",
         "system.runtime.compilerservices.unsafe.nuspec"
       ]
+    },
+    "SWPF.Common/1.0.0": {
+      "type": "project",
+      "path": "../../SWPF.Common/SWPF.Common/SWPF.Common.csproj",
+      "msbuildProject": "../../SWPF.Common/SWPF.Common/SWPF.Common.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
       "CommunityToolkit.Mvvm >= 8.4.0",
-      "Prism.Wpf >= 8.1.97"
+      "Prism.Wpf >= 8.1.97",
+      "SWPF.Common >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -372,7 +387,11 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\git\\SWPF.GameDevTool\\SWPF.Common\\SWPF.Common\\SWPF.Common.csproj": {
+              "projectPath": "D:\\git\\SWPF.GameDevTool\\SWPF.Common\\SWPF.Common\\SWPF.Common.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
